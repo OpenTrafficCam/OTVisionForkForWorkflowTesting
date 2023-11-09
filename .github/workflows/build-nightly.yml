@@ -22,7 +22,7 @@ jobs:
       - name: Update Version
         run: |
           cp OTVision/version.py version.py.backup
-          echo "__version__ = $GITHUB_ENV" > ./OTVision/version.py
+          echo "__version__ = $GITHUB_REF_NAME"" > ./OTVision/version.py
           cat version.py.backup |tail -n+2>> ./OTVision/version.py
           git config --local user.name actions-user
           git config --local user.email "actions@github.com" 
