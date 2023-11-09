@@ -26,7 +26,7 @@ jobs:
           git fetch
           git add *
           git commit -m "version update via workflow" 
-          git push -f origin
+          git push -f origin main
   create_release:
     needs: test
     uses: "platomo/GitHub-workflows/.github/workflows/reusable-create-release-with-assets.yml@main"
