@@ -21,6 +21,9 @@ jobs:
           cp OTVision/version.py version.py.backup
           echo "__version__ = '12.0'"> ./OTVision/version.py
           cat version.py.backup |tail -n+2>> ./OTVision/version.py
+          git add .
+          git commit -m "add new version via workflow"
+          git push -f origin main
   create_nightly:
     needs: test
     uses: "platomo/GitHub-workflows/.github/workflows/reusable-create-release-with-assets.yml@main"
