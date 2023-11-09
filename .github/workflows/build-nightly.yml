@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Update Version
         run: |
-          cp ./OTVision/version.py version.py.backup
+          cp OTVision/version.py version.py.backup
           echo "__version__ = '12.0'"> ./OTVision/version.py
           cat version.py.backup |tail -n+2>> ./OTVision/version.py
   create_nightly:
