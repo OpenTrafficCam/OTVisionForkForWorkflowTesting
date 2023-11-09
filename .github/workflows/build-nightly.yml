@@ -15,11 +15,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: Set env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - name: Update Version
         run: |
-          ls -la
           cp OTVision/version.py version.py.backup
-          echo "__version__ = '12.0'"> ./OTVision/version.py
+          echo "__version__ = $GITHUB_ENV" > ./OTVision/version.py
           cat version.py.backup |tail -n+2>> ./OTVision/version.py
           git config --local user.name actions-user
           git config --local user.email "actions@github.com" 
