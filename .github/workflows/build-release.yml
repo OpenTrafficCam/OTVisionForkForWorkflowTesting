@@ -21,13 +21,6 @@ jobs:
           cp OTVision/version.py version.py.backup
           echo "__version__ = \"$GITHUB_REF_NAME\"" > ./OTVision/version.py
           cat version.py.backup |tail -n+2>> ./OTVision/version.py
-          git branch -b
-          git config --local user.name actions-user
-          git config --local user.email "actions@github.com" 
-          git fetch
-          git add *
-          git commit -m "version update via workflow" 
-          git push -u origin main
   create_release:
     needs: test
     uses: "platomo/GitHub-workflows/.github/workflows/reusable-create-release-with-assets.yml@main"
