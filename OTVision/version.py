@@ -1,4 +1,4 @@
-__version__ = 'main'
+__version__ = "main"
 
 
 def otdet_version() -> str:
