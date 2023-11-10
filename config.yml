@@ -10,7 +10,7 @@ configurations:
   - package_path: OTVision
     files:
       - "install.cmd"
-      - "start_gui.cmd"
+      - "install.sh"
     suffix: "win"
     output_file_name: otvision
     additional_requirements:
@@ -18,7 +18,7 @@ configurations:
   - package_path: OTVision
     files:
       - "install.cmd"
-      - "start_gui.cmd"
+      - "install.sh"
     suffix: "linux"
     output_file_name: otvision
     additional_requirements:
@@ -26,7 +26,7 @@ configurations:
   - package_path: OTVision
     files:
       - "install.cmd"
-      - "start_gui.cmd"
+      - "install.sh"
     suffix: "macos"
     output_file_name: OTVision
     additional_requirements:
@@ -34,7 +34,7 @@ configurations:
   - package_path: OTVision
     files:
       - "install.cmd"
-      - "start_gui.cmd"
+      - "install.sh"
     suffix: "win-cuda"
     output_file_name: otvision
     additional_requirements:
@@ -42,7 +42,7 @@ configurations:
   - package_path: OTVision
     files:
       - "install.cmd"
-      - "start_gui.cmd"
+      - "install.sh"
     suffix: "linux-cuda"
     output_file_name: OTVision
     additional_requirements:
