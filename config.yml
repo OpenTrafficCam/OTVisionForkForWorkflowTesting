@@ -8,9 +8,7 @@ base_files:
   - "convert.py"
 configurations:
   - package_path: OTVision
-    files: 
-      - "install.cmd"
-      - "install.cmd"
+    files: "install.cmd"
     suffix: "win"
     output_file_name: otvision
     additional_requirements:
