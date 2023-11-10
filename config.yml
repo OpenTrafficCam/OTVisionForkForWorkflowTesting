@@ -10,20 +10,23 @@ configurations:
   - package_path: OTVision
     files:
       - "install.cmd"
+      - "start_gui.cmd"
     suffix: "win"
     output_file_name: otvision
     additional_requirements:
       - ""
   - package_path: OTVision
     files:
-      - "install.sh"
+      - "install.cmd"
+      - "start_gui.cmd"
     suffix: "linux"
     output_file_name: otvision
     additional_requirements:
       - ""
   - package_path: OTVision
     files:
-      - "install.sh"
+      - "install.cmd"
+      - "start_gui.cmd"
     suffix: "macos"
     output_file_name: OTVision
     additional_requirements:
@@ -31,13 +34,15 @@ configurations:
   - package_path: OTVision
     files:
       - "install.cmd"
+      - "start_gui.cmd"
     suffix: "win-cuda"
     output_file_name: otvision
     additional_requirements:
       - "https://download.pytorch.org/whl/cu116"
   - package_path: OTVision
     files:
-      - source: "install.sh"
+      - "install.cmd"
+      - "start_gui.cmd"
     suffix: "linux-cuda"
     output_file_name: OTVision
     additional_requirements:
