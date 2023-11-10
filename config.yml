@@ -23,8 +23,7 @@ configurations:
       - ""
   - package_path: OTVision
     files:
-      - source: "install.sh"
-        destination: "install.command"
+      - "install.sh"
     suffix: "macos"
     output_file_name: OTVision
     additional_requirements:
