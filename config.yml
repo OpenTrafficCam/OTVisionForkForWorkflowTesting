@@ -8,13 +8,17 @@ base_files:
   - "convert.py"
 configurations:
   - package_path: OTVision
-    files: "install.cmd"
+    files: 
+      - "install.cmd"
+      - "install.cmd"
     suffix: "win"
     output_file_name: otvision
     additional_requirements:
       - ""
   - package_path: OTVision
-    files: "install.sh"
+    files: 
+      - "install.cmd"
+      - "install.cmd"
     suffix: "linux"
     output_file_name: otvision
     additional_requirements:
@@ -28,13 +32,17 @@ configurations:
     additional_requirements:
       - ""
   - package_path: OTVision
-    files: "install.cmd"
+    files: 
+      - "install.cmd"
+      - "install.cmd"
     suffix: "win-cuda"
     output_file_name: otvision
     additional_requirements:
       - "https://download.pytorch.org/whl/cu116"
   - package_path: OTVision
-    files: "install.sh"
+    files: 
+      - "install.cmd"
+      - "install.cmd"
     suffix: "linux-cuda"
     output_file_name: OTVision
     additional_requirements:
