@@ -22,7 +22,7 @@ jobs:
           echo "__version__ = \"$GITHUB_REF_NAME\"" > ./OTVision/version.py
           cat version.py.backup |tail -n+2>> ./OTVision/version.py
   create_release:
-    needs: test
+    needs: update_version
     uses: "platomo/GitHub-workflows/.github/workflows/reusable-create-release-with-assets.yml@main"
     secrets:
       PLATOMO_BUILDER_ACCESS: ${{ secrets.PLATOMO_BUILDER_ACCESS }}
